@@ -24,7 +24,7 @@ Builder-friendly onchain agent. Fastest path to a risk-governed autonomous agent
 ## RiskState integration
 
 ```javascript
-const policy = await fetch("https://riskstate.netlify.app/v1/risk-state", {
+const policy = await fetch("https://api.riskstate.ai/v1/risk-state", {
   method: "POST",
   headers: {
     "Authorization": `Bearer ${RISKSTATE_API_KEY}`,

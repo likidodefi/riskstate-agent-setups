@@ -11,7 +11,7 @@ Sign up at [riskstate.ai/#get-started](https://riskstate.ai/#get-started). Free 
 ## 2. Call the API
 
 ```bash
-curl -X POST https://riskstate.netlify.app/v1/risk-state \
+curl -X POST https://api.riskstate.ai/v1/risk-state \
   -H "Authorization: Bearer $RISKSTATE_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"asset": "BTC"}'
@@ -48,7 +48,7 @@ import requests
 
 def get_risk_policy(asset="BTC"):
     resp = requests.post(
-        "https://riskstate.netlify.app/v1/risk-state",
+        "https://api.riskstate.ai/v1/risk-state",
         headers={"Authorization": f"Bearer {RISKSTATE_API_KEY}"},
         json={"asset": asset}
     )
@@ -79,7 +79,7 @@ execute_trade(asset="BTC", size=intended_size)
 ### JavaScript
 
 ```javascript
-const response = await fetch("https://riskstate.netlify.app/v1/risk-state", {
+const response = await fetch("https://api.riskstate.ai/v1/risk-state", {
   method: "POST",
   headers: {
     "Authorization": `Bearer ${RISKSTATE_API_KEY}`,

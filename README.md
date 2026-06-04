@@ -36,7 +36,7 @@ Frameworks decide. RiskState sets the limits. Execution follows policy.
 Add RiskState to any agent in 3 steps:
 
 ```bash
-curl -X POST https://riskstate.netlify.app/v1/risk-state \
+curl -X POST https://api.riskstate.ai/v1/risk-state \
   -H "Authorization: Bearer $RISKSTATE_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"asset": "BTC"}'
